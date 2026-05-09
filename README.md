@@ -4,7 +4,7 @@
 
 Für die E-Scruti-Boxen soll ein neuer Schaum geschnitten werden, in dem alle Messmitel sicher verwahrt werden. Dafür wurden die Box selbst und alle Inhalte in Creo konstruiert und positioniert.
 
-Zusätzlich gibt es eine neue 60V-Quelle, die von Grund auf neu designt und konstruiert wurde. Das git zur 60V-Quelle lautet: https://github.com/daniw/bat_source. Dazu gibt es auch ein Ladegerät bzw. Kaltgeräte-Stecker mit Kabel und Transformator, die ebenfalls untergebracht werden müssen.
+Zusätzlich gibt es eine neue 60V-Quelle, die von Grund auf neu designt und konstruiert wurde. Das git zur 60V-Quelle ist: https://github.com/daniw/bat_source. Dazu gibt es auch ein Ladegerät bzw. Kaltgeräte-Stecker mit Kabel und Transformator, die ebenfalls untergebracht werden müssen.
 
 
 
@@ -24,13 +24,24 @@ Wert kann geändert werden über "Tools --> Parameters" und dann in der Tabelle 
 
 
 
+
 ## Fehlende Modelle
 
 * Korrekte Abmessungen der 04-Komponenten (Ladegerät, Kaltgeräte-Stecker/Kabel)
 
 * Ausgewählter Kaltgeräte-Stecker ist Typ C13 (female). Nicht sicher, ob das der richtige ist, aber Dimension sollte passen.
 
-* Kabel, Messspitzen, Kelvin-Probe sind Gruppe 06. Hier wird es vermutlich reichen, einen dummy-Körper mit der ungefähren Raumausnutzung zu machen.
+* Baugruppe 06 "Teile und Zubehör zum Strom-Messen"
+  * Krokodil-Klemme: "C:\GIT_Projekte\e-scruti-box\06_04_krokoklemme.prt"
+  * Messspitzen: "06_05_messspitze_rot.prt" und "06_05_messspitze_schwarz.prt". Abmessungen nicht final.
+  * Kelvin-Probe: "C:\GIT_Projekte\e-scruti-box\06_03_kelvin_probe.prt"
+  
+  * Kelvin-Probe und Krokodil-Klemme haben ein eigenes Kabel hinten dran. Das muss mit berücksichtigt werden. Messspitzen haben kein Kabel; die können als einfacher Zylinder ausgeführt werden, ähnliche wie die normale Probe.
+  
+  
+  
+
+* Hier ist es ausreichend, einen dummy-Körper mit dem ungefähren Platzbedarf zu machen
 
 * Mit Dani klären, wie genau denn eigentlich das Ladegerät aussieht und ob das auch noch Platz finden muss.
 
@@ -60,20 +71,25 @@ Lfd. Nr. | Inhalt according google-sheets-Liste | Umsetzung / Status | Datei [*.
 11       | Messschieber (Metall)                | Fertig             | 03_messschieber_gross | 
 12       | Messchieber (Kunststoff)             | Fertig             | 03_messchieber_klein  | 
 13       | Insulated Test-Probe                 | Fertig             | 03_probe              | 
-14       | IMD-Tester                           | Fertig             | 06_imd_tester         | 
+14       | IMD-Tester                           | Fertig             | 06_01_imd_tester      | 
+16       | Kabel mit Bananensteckern (2 rot, 2 schwarz) | Fertig     | 06_02_bananenkabel    | Vereinfachtes Quader-Modell.
+18       | Kelvin-Probe                         | Fehlt              | 06_03_kelvin_probe    | 
+17       | Krokodil-Klemme                      | Fehlt              | 06_04_krokoklemme     | 
+10       | Messspitzen (1 rot, 1 schwarz)       | Fehlt              | 06_05_messspitze      | 
 15       | Eieruhr                              | Fertig             | 03_eieruhr            | 
-16       | Kabel mit Bananensteckern (2 rot, 2 schwarz) | Fertig     | 06_bananenkabel       | Vereinfachtes Quader-Modell.
 19       | Maßband                              | Fertig             | 03_massband           | 
 20       | Metrahit                             | Fertig             | 02_metrahit           | 
 21       | Taschenlampe                         | Fertig             | 07a_taschenlampe      | 
 22       | Sekundenkleber                       | Fertig             | 07_sekundenkleber     | Ungefähre Abmessungen abgeschätzt.
 23       | UV Taschenlampe                      | Fertig             | 07b_uv_taschenlampe   | Als Vorlage wird die normale Taschenlampe genutzt.
 1        | Klemmbrett                           | Fertig             | 05_klemmbrett         | 
-7        | Power Supply / 60V-Quelle            | Fertig             | 00_01_mechanical_assembly_red_asm.stp | Soll gesammelt in einem eigenen Ordner liegen. Muss dem Suchpfad hinzugefügt werden.
-8        | Kaltgerätestecker für PS             | In Arbeit          | Eigene Baugruppe aus Kabel und zwei Steckern. Muss im search-Datei mit angegeben werden.                      | 
-10       | Messspitzen (1 rot, 1 schwarz)       | Fehlt              |                       | 
-17       | Krokodil-Klemmen                     | Fehlt              |                       | 
-18       | Kelvin-Probe                         | Fehlt              |                       | 
+7        | Power Supply / 60V-Quelle            | Fertig             | 00_01_mechanical_assembly_red_asm.stp | Vereinfachtes Modell der 60V-Quelle. (04_60V_bat_source)
+8        | Kaltgerätestecker für PS             | Fertig             | 04_03_60v_ladekabel.asm   | Eigene Baugruppe aus Kabel und zwei Steckern. Muss im search-Datei mit angegeben werden.
+
+
+
+
+
 
 
 # Bauteil-Gruppen

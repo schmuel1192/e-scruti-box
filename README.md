@@ -2,31 +2,43 @@
 
 ## Inhalt und Purpose vom Projekt
 
-Inhalte der E-Scruti-Box sollen neu angeordnet werden und ein neuer Schaum geschnitten werden. Alle bestehenden Inhalte der Scruti-Box werden konstruiert, um die im CAD anzuordnen.
+Für die E-Scruti-Boxen soll ein neuer Schaum geschnitten werden, in dem alle Messmitel sicher verwahrt werden. Dafür wurden die Box selbst und alle Inhalte in Creo konstruiert und positioniert.
 
-Es wird eine neue 60V-Quelle entwickelt, die die alte ersetzen soll. Dazu gibt es auch ein neues Ladegerät bzw. Kaltgeräte-Stecker mit Transformator. Die müssen alle neu konstruiert und angeordnet werden. 60V-Quelle liegt unter "D:\GIT_Projekte\bat_source"
+Zusätzlich gibt es eine neue 60V-Quelle, die von Grund auf neu designt und konstruiert wurde. Das git zur 60V-Quelle lautet: https://github.com/daniw/bat_source. Dazu gibt es auch ein Ladegerät bzw. Kaltgeräte-Stecker mit Kabel und Transformator, die ebenfalls untergebracht werden müssen.
+
 
 
 ## Creo und Konstruktion
 
 ### Hinweise für Creo
 
-Es gibt einen eigenen PTC-Creo-Start-Links. Ist aus dem 3D-Druck-Projekt kopiert.
+Es gibt einen eigenen PTC-Creo-Start-Link. Ist aus dem 3D-Druck-Projekt kopiert. Verknüpfung verweist dann auf den Ordner mit config- und search-Datei.
+
+In der search-Datei wird nur zusätzlich der Pfad zum Ordner mit der 60V-Quelle referenziert.
 
 ### Anpassungen an die Konstruktion
 
 In der Main-Assembly "00_escruti_box_v1.asm" gibt es den Parameter "ABSTAND_ZUM_SCHAUM", mit dem die Komponenten eingebaut und ausgebaut werden können.
 
-Abmessungen vom Klemmbrett sind nur abgeschätzt, die müssen noch neu gemacht werden.
+Wert kann geändert werden über "Tools --> Parameters" und dann in der Tabelle ein neuer Wert eingegeben werden. Danach mus mit Strg+G die Darstellung neu geladen werden.
+
 
 
 ## Fehlende Modelle
 
-Klemmbrett. Gehört zur Gruppe 05.
+* Korrekte Abmessungen der 04-Komponenten (Ladegerät, Kaltgeräte-Stecker/Kabel)
 
-Korrekte Abmessungen der 04-Komponenten (Battery-Source, Ladegerät, Kaltgeräte-Stecker/Kabel)
+* Ausgewählter Kaltgeräte-Stecker ist Typ C13 (female). Nicht sicher, ob das der richtige ist, aber Dimension sollte passen.
 
-Kabel, Messspitzen, Kelvin-Probe sind Gruppe 06
+* Kabel, Messspitzen, Kelvin-Probe sind Gruppe 06. Hier wird es vermutlich reichen, einen dummy-Körper mit der ungefähren Raumausnutzung zu machen.
+
+* Mit Dani klären, wie genau denn eigentlich das Ladegerät aussieht und ob das auch noch Platz finden muss.
+
+## 60V-Quelle
+
+Im CAD der 60V-Quelle gibt es einen step-Export "00_01_mechanical_assembly_red_asm.stp", der hier genutzt wird. Besteht nur aus Gehäuse und Deckel, um die äußeren Abmessungen zu haben.
+
+
 
 
 # Inhalte der Kiste und aktueller Status
@@ -34,7 +46,7 @@ Kabel, Messspitzen, Kelvin-Probe sind Gruppe 06
 
 
 
-Lfd. Nr. | Inhalt according google-sheets-Liste | Umsetzung / Status | Datei [*.prt]         | Kommentar
+Lfd. Nr. | Inhalt according google-sheets-Liste | Umsetzung / Status | Datei [*.prt / *.asm]         | Kommentar
 ---------| ------------------------------------ | ------------------ | --------------------- | ----------------
 -2       |                                      | Haupt-Modell       | 00_escruti_box_v1.asm | Main-Assembly
 -1       |                                      | Haupt-Modell       | 01a_wuerth_box        | Vereinfachtes Modell der Wuerth-Box.
@@ -54,11 +66,11 @@ Lfd. Nr. | Inhalt according google-sheets-Liste | Umsetzung / Status | Datei [*.
 19       | Maßband                              | Fertig             | 03_massband           | 
 20       | Metrahit                             | Fertig             | 02_metrahit           | 
 21       | Taschenlampe                         | Fertig             | 07a_taschenlampe      | 
-22       | Sekundenkleber                       | Fertig             | 07_sekundenkleber     | Ungefähre Abmessungen abgschätzt.
+22       | Sekundenkleber                       | Fertig             | 07_sekundenkleber     | Ungefähre Abmessungen abgeschätzt.
 23       | UV Taschenlampe                      | Fertig             | 07b_uv_taschenlampe   | Als Vorlage wird die normale Taschenlampe genutzt.
-1        | Klemmbrett                           | Fehlt              | 05_klemmbrett         | Abmessungen müssen noch korrigiert werden. Sind nur abgeschätzt.
-7        | Power Supply                         | Fehlt              |                       | 
-8        | Kaltgerätestecker für PS             | Fehlt              |                       | 
+1        | Klemmbrett                           | Fertig             | 05_klemmbrett         | 
+7        | Power Supply / 60V-Quelle            | Fertig             | 00_01_mechanical_assembly_red_asm.stp | Soll gesammelt in einem eigenen Ordner liegen. Muss dem Suchpfad hinzugefügt werden.
+8        | Kaltgerätestecker für PS             | In Arbeit          | Eigene Baugruppe aus Kabel und zwei Steckern. Muss im search-Datei mit angegeben werden.                      | 
 10       | Messspitzen (1 rot, 1 schwarz)       | Fehlt              |                       | 
 17       | Krokodil-Klemmen                     | Fehlt              |                       | 
 18       | Kelvin-Probe                         | Fehlt              |                       | 
@@ -82,7 +94,7 @@ Nummer | Baugruppe
 
 # Hinweise
 
-Bananenkabel sind nicht korrekt und im Detail konstruiert, es wird nur ein ungefährer Raum als Quader abgschätzt und verwendet.
+Bananenkabel sind nicht korrekt und im Detail konstruiert, es wird nur ein ungefährer Raum als Quader abgeschätzt und verwendet.
 
 Dasselbe wird fuer die anderen Kabel, Kelvin-Probe und Krokodil-Klemme gemacht.
 

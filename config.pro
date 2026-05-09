@@ -14,4 +14,5 @@ weld_ui_standard ansi
 search_path_file $CREO_COMMON_FILES\ifx\parts\prolibrary\search.pro
 pro_unit_sys mks
 search_path_file D:\GIT_Projekte\e-scruti-box\search.pro
+search_path_file C:\GIT_Projekte\e-scruti-box\search.pro
 save_file_iterations no

@@ -17,8 +17,17 @@
 !
 !
 
-D:\GIT_Projekte\e-scruti-box
-D:\GIT_Projekte\D:\GIT_Projekte\bat_source
+! D:\GIT_Projekte\
+! C:\GIT_Projekte\e-scruti-box\04_60V_bat_source
+! C:\GIT_Projekte\e-scruti-box\04_schuko_plug
+
+! Relative Pfade zu Unterordnern
+./04_60V_bat_source
+./04_schuko_plug
+./04_cold_plug_C13
+
+! Falls sie eine Ebene höher liegen
+../andere_komponenten
 
 
 "$CREO_COMMON_FILES\ifx\parts\prolibrary\eng_part_lib\cot_clvs_pin"

@@ -1,0 +1,10 @@
+﻿"Symbol";"Value";"Unit";
+"TraceParts.PartNumber";"90-08022019-044336";"";
+"REFERENCE";"px0587";"";
+"TraceParts.PartTitle";"IEC Connectors, px0587";"";
+"TraceParts.InstanceId";"90-08022019-0443362N3XX9WWY2MK673V115V3T3RA";"";
+"SUPPLIER";"Bulgin";"";
+"DESIGN";"IEC Connectors, px0587";"";
+"TRACEPARTS";"TRACEPARTS";"";
+"TraceParts.PartLanguage";"en";"";
+"TraceParts.PartVersion";"1.0.2";"";

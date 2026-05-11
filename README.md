@@ -61,24 +61,24 @@ Lfd. Nr. | Inhalt according google-sheets-Liste         | Datei [*.prt / *.asm] 
 -2       |                                              | 00_escruti_box_v1.asm                 | Haupt-Modell. Main-Assembly
 -1       |                                              | 01a_wuerth_box                        | Haupt-Modell. Vereinfachtes Modell der Wuerth-Box.
 0        |                                              | 01b_schaum.prt                        | Haupt-Modell. Daran wird hauptsächlich gearbeitet. Soll am Ende exportiert und dann verwendet werden.
-2        | ASF-Flow-Chart                               | 05_ASF_flow_chart                     | 
-3        | Scruti-Sheet                                 | 05_scruti_sheet                       | 
+2        | ASF-Flow-Chart                               | 05_ASF_flow_chart                     | |
+3        | Scruti-Sheet                                 | 05_scruti_sheet                       | |
 4        | Notizblock                                   | 05_notizblock                         | FSG-Standard-Notizblock
 5        | 2 Stifte                                     | 05_stift                              | FSG-Standard-Kugelschreiber
 6        | Zollstock                                    | 03_zollstock                          | 1m-Zollstock. Kunststoff.
-9        | Feuerzeug                                    | 07_feuerzeug                          | 
-11       | Messschieber (Metall)                        | 03_messschieber_gross                 | 
-12       | Messchieber (Kunststoff)                     | 03_messchieber_klein                  | 
-13       | Insulated Test-Probe                         | 03_probe                              | 
-14       | IMD-Tester                                   | 06_01_imd_tester                      | 
+9        | Feuerzeug                                    | 07_feuerzeug                          | |
+11       | Messschieber (Metall)                        | 03_messschieber_gross                 | |
+12       | Messchieber (Kunststoff)                     | 03_messchieber_klein                  | |
+13       | Insulated Test-Probe                         | 03_probe                              | |
+14       | IMD-Tester                                   | 06_01_imd_tester                      | |
 16       | Kabel mit Bananensteckern (2 rot, 2 schwarz) | 06_02_bananenkabel                    | Vereinfachtes Quader-Modell mit räumlichen Abschätzungen.
-18       | Kelvin-Probe                                 | 06_03_kelvin_probe                    | 
+18       | Kelvin-Probe                                 | 06_03_kelvin_probe                    | |
 17       | Krokodil-Klemme                              | 06_04_krokoklemme                     | Online-Modell, leicht angepasst.
 10       | Messspitzen (1 rot, 1 schwarz)               | 06_05_messspitze                      | Zwei identische Modelle, Unterschied ist nur die Farbe.
-15       | Eieruhr                                      | 03_eieruhr                            | 
-19       | Maßband                                      | 03_massband                           | 
-20       | Metrahit                                     | 02_metrahit                           | 
-21       | Taschenlampe                                 | 07a_taschenlampe                      | 
+15       | Eieruhr                                      | 03_eieruhr                            | |
+19       | Maßband                                      | 03_massband                           | |
+20       | Metrahit                                     | 02_metrahit                           | |
+21       | Taschenlampe                                 | 07a_taschenlampe                      | |
 22       | Sekundenkleber                               | 07_sekundenkleber                     | Ungefähre Abmessungen abgeschätzt.
 23       | UV Taschenlampe                              | 07b_uv_taschenlampe                   | Als Vorlage wird die normale Taschenlampe genutzt.
 1        | Klemmbrett                                   | 05_klemmbrett                         | Hat keinen designierten Platz, wird mit Scruti-Sheet und ASF-Flow-Chart einfach nur oben aufgelegt.
@@ -99,7 +99,7 @@ Lfd. Nr. | Inhalt according google-sheets-Liste         | Datei [*.prt / *.asm] 
 
 * Anmerkungen zur Krokodil-Klemme und Kelvin-Probe
 
-  * Kelvin-Probe und Krokodil-Klemme haben ein eigenes Kabel hinten dran. Das muss in dem Fach auch noch Platz finden. Ist im Modell nicht berücksichtigt.
+  * Kelvin-Probe und Krokodil-Klemme haben ein eigenes Kabel hinten dran. Das muss in dem Fach auch noch Platz finden. Ist im Modell nicht modelliert, sollte aber passen.
   
   
   * Krokodil-Klemme, Abmessungen. Runtergeladenes Modell etwas angepasst und kürzer gemacht. Stimmt immer noch nicht, ist aber besser als die DIY-Variante.

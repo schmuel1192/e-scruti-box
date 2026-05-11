@@ -25,6 +25,7 @@
 ./04_60V_bat_source
 ./04_schuko_plug
 ./04_cold_plug_C13
+./06_04_crocodile_clip
 
 ! Falls sie eine Ebene höher liegen
 ../andere_komponenten

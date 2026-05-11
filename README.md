@@ -32,16 +32,21 @@ Wert kann geändert werden über "Tools --> Parameters" und dann in der Tabelle 
 * Ausgewählter Kaltgeräte-Stecker ist Typ C13 (female). Nicht sicher, ob das der richtige ist, aber Dimension sollte passen.
 
 * Baugruppe 06 "Teile und Zubehör zum Strom-Messen"
-  * Krokodil-Klemme: "C:\GIT_Projekte\e-scruti-box\06_04_krokoklemme.prt"
-  * Messspitzen: "06_05_messspitze_rot.prt" und "06_05_messspitze_schwarz.prt". Abmessungen nicht final.
   * Kelvin-Probe: "C:\GIT_Projekte\e-scruti-box\06_03_kelvin_probe.prt"
-  
-  * Kelvin-Probe und Krokodil-Klemme haben ein eigenes Kabel hinten dran. Das muss mit berücksichtigt werden. Messspitzen haben kein Kabel; die können als einfacher Zylinder ausgeführt werden, ähnliche wie die normale Probe.
-  
+  * Kelvin-Probe und Krokodil-Klemme haben ein eigenes Kabel hinten dran. Das muss mit berücksichtigt werden.
   
   
+  * Krokodil-Klemme, Abmessungen. Runtergeladenes Modell etwas angepasst und kürzer gemacht. Stimmt immer noch nicht, ist aber besser als die DIY-Variante.
 
-* Hier ist es ausreichend, einen dummy-Körper mit dem ungefähren Platzbedarf zu machen
+
+   Maß    | Soll (scruti-box) | Ist (Modell)
+   -------| ------------------| -------------
+   Länge  | 91                | 179
+   Breite | 15                | 19
+   Höhe   | 40                | 49
+
+  
+  
 
 * Mit Dani klären, wie genau denn eigentlich das Ladegerät aussieht und ob das auch noch Platz finden muss.
 
@@ -73,9 +78,9 @@ Lfd. Nr. | Inhalt according google-sheets-Liste | Umsetzung / Status | Datei [*.
 13       | Insulated Test-Probe                 | Fertig             | 03_probe              | 
 14       | IMD-Tester                           | Fertig             | 06_01_imd_tester      | 
 16       | Kabel mit Bananensteckern (2 rot, 2 schwarz) | Fertig     | 06_02_bananenkabel    | Vereinfachtes Quader-Modell.
-18       | Kelvin-Probe                         | Fehlt              | 06_03_kelvin_probe    | 
-17       | Krokodil-Klemme                      | Fehlt              | 06_04_krokoklemme     | 
-10       | Messspitzen (1 rot, 1 schwarz)       | Fehlt              | 06_05_messspitze      | 
+18       | Kelvin-Probe                         | Fehlt                    | 06_03_kelvin_probe    | 
+17       | Krokodil-Klemme                      | Fertig             | 06_04_krokoklemme     | 
+10       | Messspitzen (1 rot, 1 schwarz)       | Fertig             | 06_05_messspitze      | 
 15       | Eieruhr                              | Fertig             | 03_eieruhr            | 
 19       | Maßband                              | Fertig             | 03_massband           | 
 20       | Metrahit                             | Fertig             | 02_metrahit           | 

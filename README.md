@@ -6,6 +6,10 @@ Für die E-Scruti-Boxen soll ein neuer Schaum geschnitten werden, in dem alle Me
 
 Zusätzlich gibt es eine neue 60V-Quelle, die von Grund auf neu designt und konstruiert wurde. Das git zur 60V-Quelle ist: https://github.com/daniw/bat_source. Dazu gibt es auch ein Ladegerät bzw. Kaltgeräte-Stecker mit Kabel und Transformator, die ebenfalls untergebracht werden müssen.
 
+Aktueller Stand der kompletten E-Scruti-Box liegt unter "C:\GIT_Projekte\e-scruti-box\step_files_escruti_box". Dort immer zwei Versionen, einmal ein- und einmal ausgebaut.
+
+Unter "C:\GIT_Projekte\e-scruti-box\step_files_Komponenten" liegen die step-Dateien aller Inhalte der Scruti-Box. Es ist nicht garantiert, dass die auf dem aktuellen Stand sind!!! Einzig der Schaum ist aktuell (18.05.2026) ausgeleitet worden.
+
 
 
 ## Creo und Konstruktion
@@ -23,7 +27,7 @@ In der Main-Assembly "00_escruti_box_v1.asm" gibt es den Parameter "ABSTAND_ZUM_
 Wert kann geändert werden über "Tools --> Parameters" und dann in der Tabelle ein neuer Wert eingegeben werden. Danach mus mit Strg+G die Darstellung neu geladen werden.
 
 
-  
+
 
 
 ## 60V-Quelle
@@ -84,6 +88,7 @@ Lfd. Nr. | Inhalt according google-sheets-Liste         | Datei [*.prt / *.asm] 
 1        | Klemmbrett                                   | 05_klemmbrett                         | Hat keinen designierten Platz, wird mit Scruti-Sheet und ASF-Flow-Chart einfach nur oben aufgelegt.
 7        | Power Supply / 60V-Quelle                    | 00_01_mechanical_assembly_red_asm.stp | Vereinfachtes Modell der 60V-Quelle. (04_60V_bat_source)
 8        | Kaltgerätestecker für PS                     | 04_03_60v_ladekabel.asm               | Eigene Baugruppe aus Kabel und zwei Steckern. Muss im search-Datei mit angegeben werden.
+7b       | Ladegerät für 60V-Quelle                     | 04_01_60v_ladegeraet                  | Laptop-Ladegerät für 60V-Quelle |
 
 
 

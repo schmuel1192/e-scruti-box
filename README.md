@@ -6,9 +6,8 @@ Für die E-Scruti-Boxen soll ein neuer Schaum geschnitten werden, in dem alle Me
 
 Zusätzlich gibt es eine neue 60V-Quelle, die von Grund auf neu designt und konstruiert wurde. Das git zur 60V-Quelle ist: https://github.com/daniw/bat_source. Dazu gibt es auch ein Ladegerät bzw. Kaltgeräte-Stecker mit Kabel und Transformator, die ebenfalls untergebracht werden müssen.
 
-Aktueller Stand der kompletten E-Scruti-Box liegt unter "C:\GIT_Projekte\e-scruti-box\step_files_escruti_box". Dort immer zwei Versionen, einmal ein- und einmal ausgebaut.
+Aktueller Stand der kompletten E-Scruti-Box liegt unter "C:\GIT_Projekte\e-scruti-box\00_escruti_box__step_files". Dort immer zwei Versionen, einmal ein- und einmal ausgebaut.
 
-Unter "C:\GIT_Projekte\e-scruti-box\step_files_Komponenten" liegen die step-Dateien aller Inhalte der Scruti-Box. Es ist nicht garantiert, dass die auf dem aktuellen Stand sind!!! Einzig der Schaum ist aktuell (18.05.2026) ausgeleitet worden.
 
 
 
@@ -22,7 +21,7 @@ In der search-Datei wird nur zusätzlich der Pfad zum Ordner mit der 60V-Quelle 
 
 ### Anpassungen an die Konstruktion
 
-In der Main-Assembly "00_escruti_box_v1.asm" gibt es den Parameter "ABSTAND_ZUM_SCHAUM", mit dem die Komponenten eingebaut und ausgebaut werden können.
+In der Main-Assembly "00_escruti_box.asm" gibt es den Parameter "ABSTAND_ZUM_SCHAUM", mit dem die Komponenten eingebaut und ausgebaut werden können.
 
 Wert kann geändert werden über "Tools --> Parameters" und dann in der Tabelle ein neuer Wert eingegeben werden. Danach mus mit Strg+G die Darstellung neu geladen werden.
 
@@ -34,6 +33,7 @@ Wert kann geändert werden über "Tools --> Parameters" und dann in der Tabelle 
 
 Im CAD der 60V-Quelle gibt es einen step-Export "00_01_mechanical_assembly_red_asm.stp", der hier genutzt wird. Besteht nur aus Gehäuse und Deckel, um die äußeren Abmessungen zu haben.
 
+Für das Ladegerät sollen Laptop-Ladegeräte von der ETH genutzt werden. Von den mehreren Ladegeräten ist die größte Variante abgebildet.
 
 Mit Dani klären, wie genau denn eigentlich das Ladegerät aussieht und ob das auch noch Platz finden muss.
 
